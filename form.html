@@ -1,0 +1,68 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<title>J QUERRY1</title>
+
+			<!-- required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+			<!-- Boostrap CSS Stylesheet -->
+			<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+			<!-- Internal CSS -->
+			<style type="text/css">
+				
+
+			</style>
+
+		</head>
+			
+		<body>
+
+			<button type="button" class="btn btn-primary" id="quote">Click Me</button>
+
+			<button type="button" class="btn btn-primary" id="digits">Display Numbers</button>
+			
+			<div id="hove">
+				<p>This is a test. We are trying to hide this paragraph</p>
+			</div>
+
+			<script src="jquery.js" type="text/javascript"></script>
+
+			<script type="text/javascript" language="javascript">
+
+				// $("p").click(function(){
+				// 	$(this).hide(
+				// 		function(){
+				// 			alert('Paragraph is hidden')
+				// 		});
+				// });
+
+				$("#hove").hover(function(){
+					alert("You entered p1");
+				},function(){
+					alert("Bye!You now leave p1");
+				});
+				
+				$("#quote").click(function(){
+					alert("I am blessed!");
+
+				})
+
+				$("#digits").click(function(){
+					for(var g=1; g<=10; g++)
+					{document.write(g)}
+				})
+				
+
+				// $(document).ready(function(){
+				// 	alert('The page has now loaded')
+				// 	});
+			</script>
+
+			
+		</body>
+	</html>
+
+
